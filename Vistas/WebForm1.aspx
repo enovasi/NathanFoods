@@ -24,7 +24,7 @@
             <asp:Button ID="botonBusqueda" runat="server" OnClick="Button1_Click" Text="Buscar" />
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="MERCANSA1">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="MERCANSA1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
                      <asp:TemplateField HeaderText="Check">
             <ItemTemplate>
@@ -35,12 +35,14 @@
                     <asp:BoundField DataField="cardcode" HeaderText="#Cliente" SortExpression="cardcode" />
                     <asp:BoundField DataField="cardname" HeaderText="Cliente" SortExpression="cardname" />
                     <asp:BoundField DataField="docdate" HeaderText="Fecha" SortExpression="docdate" DataFormatString="{0:d}" />
-                    <asp:BoundField DataField="Column1" HeaderText="Total" ReadOnly="True" SortExpression="Column1" DataFormatString="{0:N}" />
+                    <asp:BoundField DataField="Column1"HeaderText="Total" ReadOnly="True" SortExpression="Column1" DataFormatString="{0:N}" />
                 </Columns>
             </asp:GridView>
+            <asp:Button ID="CalculateButton" runat="server" OnClick="CalculateButton_Click1" Text="Calcular" />
+            <br />
             <asp:TextBox ID="textComentario" runat="server" TextMode="MultiLine" Width="280px"></asp:TextBox>
             <br />
-            <asp:SqlDataSource ID="MERCANSA1" runat="server" ConnectionString="<%$ ConnectionStrings:MERCANSA2013V1ConnectionString %>" SelectCommand="select t0.docnum, t0.cardcode, t0.cardname, t0.docdate, SUM(t1.linetotal) FROM ORDR t0
+            <asp:SqlDataSource ID="MERCANSA1" runat="server" ConnectionString="<%$ ConnectionStrings:MERCANSA2013V1ConnectionString %>" SelectCommand="select t0.docnum, t0.cardcode, t0.cardname, t0.docdate, SUM(t1.linetotal) as Total FROM ORDR t0
 INNER JOIN RDR1 t1 on t0.docentry = t1.docentry
 WHERE t0.docdate between @desde and @hasta
 AND  t0.canceled = 'N'
