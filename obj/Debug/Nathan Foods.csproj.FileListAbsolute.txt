@@ -1,0 +1,39 @@
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\ApplicationInsights.config
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Nathan Foods.dll.config
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Nathan Foods.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Nathan Foods.pdb
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Antlr3.Runtime.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.Web.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.ApplicationInsights.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Newtonsoft.Json.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\System.Web.Optimization.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\WebGrease.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\System.Web.Optimization.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Antlr3.Runtime.pdb
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Newtonsoft.Json.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.ApplicationInsights.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\Microsoft.AI.Web.xml
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\es\System.Web.Optimization.resources.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\obj\Debug\Nathan Foods.csprojResolveAssemblyReference.cache
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\obj\Debug\Nathan Foods.csproj.CoreCompileInputs.cache
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\obj\Debug\Nathan Foods.dll
+C:\Users\adiaz\source\repos\Nathan Foods\Nathan Foods\obj\Debug\Nathan Foods.pdb
