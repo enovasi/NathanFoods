@@ -5,10 +5,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title></title>
+
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css" rel="stylesheet"/>
+	<link  href="https://cdn.datatables.net/1.10.16/css/dataTables.material.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.material.min.js"></script>
+     <script>
+         $(function () {
+             $("#GridView1").prepend($("<thead></thead>").append($(this).find("tr:first"))).DataTable({
+                 columnDefs: [
+                     {
+                         targets: [0, 1, 2],
+                         className: 'mdl-data-table__cell--non-numeric'
+                     }
+                 ]
+
+             });
+         });
+
+      
+    </script>
+ <title></title>
 
 </head>
 <body>
@@ -28,7 +46,7 @@
             <asp:Button ID="botonBusqueda" runat="server" OnClick="Button1_Click" Text="Buscar" />
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="MERCANSA1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="MERCANSA1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" class="mdl-data-table">
                 <Columns>
                      <asp:TemplateField HeaderText="Check">
             <ItemTemplate>
