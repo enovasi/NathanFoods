@@ -15,7 +15,11 @@
     <form id="form1" runat="server">
         <div>
             Pedidos por Procesar - Rango de Fechas<br />
+            Cant. Ordenes:
             <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
+            <br />
+            Peso:
+            <asp:Label ID="lblMessage2" runat="server" Text="Label"></asp:Label>
             <br />
             Desde:
             <asp:TextBox ID="fechaDesde" runat="server" OnTextChanged="TextBox1_TextChanged" TextMode="Date"></asp:TextBox>
@@ -28,17 +32,24 @@
                 <Columns>
                      <asp:TemplateField HeaderText="Check">
             <ItemTemplate>
-                <asp:CheckBox ID="myCheckbox" runat="server" />
+                <asp:CheckBox ID="myCheckbox" runat="server" AutoPostBack="true"  OnCheckedChanged="SelectCheckBox_OnCheckedChanged"/>
             </ItemTemplate>
         </asp:TemplateField>
                     <asp:BoundField DataField="docnum" HeaderText="#Doc" SortExpression="docnum" />
                     <asp:BoundField DataField="cardcode" HeaderText="#Cliente" SortExpression="cardcode" />
                     <asp:BoundField DataField="cardname" HeaderText="Cliente" SortExpression="cardname" />
                     <asp:BoundField DataField="docdate" HeaderText="Fecha" SortExpression="docdate" DataFormatString="{0:d}" />
-                    <asp:BoundField DataField="Column1"HeaderText="Total" ReadOnly="True" SortExpression="Column1" DataFormatString="{0:N}" />
+                     <asp:TemplateField HeaderText="Total" SortExpression="Column1">
+                         <EditItemTemplate>
+                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("Total") %>'></asp:Label>
+                         </EditItemTemplate>
+                         <ItemTemplate>
+                             <asp:Label ID="Label1" runat="server" Text='<%# Bind("Total") %>'></asp:Label>
+                         </ItemTemplate>
+                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
-            <asp:Button ID="CalculateButton" runat="server" OnClick="CalculateButton_Click1" Text="Calcular" />
+            
             <br />
             <asp:TextBox ID="textComentario" runat="server" TextMode="MultiLine" Width="280px"></asp:TextBox>
             <br />

@@ -114,30 +114,37 @@ namespace Nathan_Foods.Vistas
 
         }
 
-        protected void CalculateButton_Click1(object sender, EventArgs e)
+        protected void SelectCheckBox_OnCheckedChanged(object sender, EventArgs e)
         {
-          //  Int32 totalMVValue = 0;
+            CheckBox chk = sender as CheckBox;
 
-            // Iterate through the Products.Rows property
+            if (chk.Checked)
+            {
+                GridViewRow row = (GridViewRow)chk.NamingContainer;
+                //lblMessage.Text = row.Cells[1].Text;
+                //lblMessage2.Text = row.Cells[2].Text;
+                
+            }
+            int conteo = 1;
+            double suma = 10000;
+            double valor3 = 0;
             foreach (GridViewRow row in GridView1.Rows)
             {
-                // Access the CheckBox
-                CheckBox mvSelectorCheckBox = (CheckBox)row.FindControl("myCheckbox");
-                if (mvSelectorCheckBox != null && mvSelectorCheckBox.Checked)
+                if (((CheckBox)row.FindControl("myCheckbox")).Checked)
                 {
-                    // First, get the primaryId for the selected row
-                    //int mvValue = Convert.ToInt32(row.("total"));
-                    //int mvValue = Convert.ToInt32(GridView1.DataKeys[row.RowIndex].Value);
-                   // totalMVValue += mvValue;
-                   
-                    // (mvValue);
-                   // lblMessage.Text = Convert.ToString(mvValue);
+                    conteo = conteo + 1;
+                    string valor = Convert.ToString(row.Cells[1].Text);
+                    double newvalor = Convert.ToDouble(valor);
+                    valor3 = valor3 + newvalor;
+                    lblMessage.Text = Convert.ToString(conteo);
+                    //lblMessage2.Text = Convert.ToString(valor);
                 }
-            
-
+                
             }
+            
+            lblMessage2.Text = Convert.ToString(valor3);
         }
 
-     
+
     }
 }

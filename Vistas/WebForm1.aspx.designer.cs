@@ -31,6 +31,15 @@ namespace Nathan_Foods.Vistas {
         protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
+        /// Control lblMessage2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage2;
+        
+        /// <summary>
         /// Control fechaDesde.
         /// </summary>
         /// <remarks>
@@ -65,15 +74,6 @@ namespace Nathan_Foods.Vistas {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
-        
-        /// <summary>
-        /// Control CalculateButton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CalculateButton;
         
         /// <summary>
         /// Control textComentario.
